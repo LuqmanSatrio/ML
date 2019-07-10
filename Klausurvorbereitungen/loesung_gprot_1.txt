@@ -1,0 +1,38 @@
+
+
+Section I (4 points each)
+• Supervised Learning
+• Unsupervised Learning
+• Reinforcement Learning
+---->
+
+Reinforcement learning is learning what to do—how to map situations to actions—so as to maximize a numerical reward signal. The learner is not told which actions to take, but instead must discover which actions yield the most reward by trying them.
+• Training Set
+• Test Set 
+• Naive Bayes Assumption
+• K-Fold cross validation
+• Functional Margin
+• Markov property
+• State value function
+
+Section II (4 points each)
+• What is the shape of the sigmoid function and why is it used in logistic regression?
+---->
+1/(1+e^(-x)) = e^x/(e^x - 1): Classify binary for example, because it returns a value in the range (0,1) it can be used to label positive by sig(x) >= 0.5 and negative by sig(x) < 0.5. Example is given by spam or not spam in the lecture!
+• Why is useful dimension reduction in machine learning?
+• Which are the 2 main steps of the k-means algorithm?
+• What is the general EM algorithm?
+• Why is it useful the distortion function 
+• How is the Return defined in reinforcement learning?
+General the return is defined as G_t = R_(t+1) + R_(t+2)+ ... + R_T
+But if we consider continous tasks the return is defined as:
+G_t = \sum_k=1^infinity (gama^k * R_(t+k+1)).
+This converges because wh have indeed a infinity sum, but if we consider a constant Reward of 1 we can show:
+G_t = \sum_k=0^\infinity (\gamma^k) = 1/(1-\gamma)
+• Give the Bellman equation for V^π
+• What is π∗ (Give equation)
+
+Section II (6 points each)
+• Logistic regression: What alpha did you use, how many iterations did you need? what was your polynomial degree? is M=3 better than M=30? why and why not?
+• GDA: What features did you use? Which one worked best? Why?
+
